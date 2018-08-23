@@ -1,0 +1,59 @@
+# Site settings
+baseurl = "https://example.org/"
+languageCode = "en-us"
+title = "Matthew and Brandy 2019"
+theme = "hugo-smpl-theme"
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engines feel free to add a few information.
+  # This lines will be inserted as meta tags.
+  name = "Your Name"
+  description = "Your Description"
+
+  [params.profile]
+    enable = true
+    image = "/assets/img/olive.jpg"
+    width = "100%"
+    alt = "Olive"
+  
+  [params.logo]
+    enable = true
+    image = "/assets/img/becf.jpg"
+    width = "100%"
+    alt = "Bird's Eye Cove Farm"
+
+  # Header section
+  [params.header]
+    enable = true
+    title = "Matt & Brandy<br>Are Getting Married<br>@<br>Bird's Eye Cove Farm<br>August 17th, 2019"
+
+  # Quote section
+  [params.quote]
+    enable = true
+    text = "Matt and Brandy are getting married!"
+
+  # Social icons section
+  # Add a modifier class to increase size
+  # fa-lg, fa-2x, fa-3x, fa-4x, fa-5x
+  # e.g., icon = "fa-instagram fa-lg"
+  [params.social_icons]
+    enable = true
+
+  [[params.social]]
+    title = "Blog"
+    icon = "fa-comment"
+    link = "http://freelance.postach.io"
+
+  [[params.social]]
+    title = "Email Me!"
+    icon = "fa-envelope"
+    link = "mailto:matt.fisher@fishworks.io"

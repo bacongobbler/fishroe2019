@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Title -->
+      {{ if .Site.Params.header.enable }}
+        {{ partial "header.html" . }}
+      {{ end }}
+
+      <!-- Social -->
+      {{ if .Site.Params.social_icons.enable }}
+        {{ partial "social.html" . }}
+      {{ end }}
+    </div><!-- /.container -->
+
+    <!-- Quote -->
+    {{ if .Site.Params.quote.enable }}
+      {{ partial "quote.html" . }}
+    {{ end }}
+
+    <!-- Profile -->
+    <div class="profile">
+      <img src="{{ .Site.Params.profile.image }}" width="{{ .Site.Params.profile.width }}" alt="{{ .Site.Params.profile.alt }}">
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="{{ .Site.Params.logo.image }}" width="{{ .Site.Params.logo.width }}" alt="{{ .Site.Params.logo.alt }}">
+    </div>
+
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
