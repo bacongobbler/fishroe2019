@@ -5,32 +5,35 @@
   </head>
 
   <body>
+
+    <!-- Title -->
     <div class="container">
-      <!-- Title -->
       {{ if .Site.Params.header.enable }}
         {{ partial "header.html" . }}
       {{ end }}
-
-      <!-- Social -->
-      {{ if .Site.Params.social_icons.enable }}
-        {{ partial "social.html" . }}
-      {{ end }}
-    </div><!-- /.container -->
-
-    <!-- Quote -->
-    {{ if .Site.Params.quote.enable }}
-      {{ partial "quote.html" . }}
-    {{ end }}
-
-    <!-- Profile -->
-    <div class="profile">
-      <img src="{{ .Site.Params.profile.image }}" width="{{ .Site.Params.profile.width }}" alt="{{ .Site.Params.profile.alt }}">
     </div>
 
     <!-- Logo -->
     <div class="logo">
       <img src="{{ .Site.Params.logo.image }}" width="{{ .Site.Params.logo.width }}" alt="{{ .Site.Params.logo.alt }}">
     </div>
+
+    <!-- Quote -->
+    <div class="container">
+      <div class="row w centered">
+        <br>
+        <div class="col-lg-6 col-lg-offset-3">
+          <p>We are so happy that you’ll be able to join us for our wedding. As many of you know, we’ve lived together for several years, and our house is already filled with all the things we could ever need to make it a home. While the presence of your company is the only gift we could ever ask for, an alternative registry has been set up here for those who have expressed an interest in offering a gift to mark the occasion.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Social -->
+      {{ if .Site.Params.social_icons.enable }}
+        {{ partial "social.html" . }}
+      {{ end }}
+    </div><!-- /.container -->
 
     {{ partial "scripts.html" . }}
   </body>

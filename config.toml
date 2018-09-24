@@ -36,11 +36,6 @@ googleAnalytics = ""
     enable = true
     title = "Matt & Brandy<br>Are Getting Married<br>@<br>Bird's Eye Cove Farm<br>August 17th, 2019"
 
-  # Quote section
-  [params.quote]
-    enable = true
-    text = "Matt and Brandy are getting married!"
-
   # Social icons section
   # Add a modifier class to increase size
   # fa-lg, fa-2x, fa-3x, fa-4x, fa-5x
@@ -49,11 +44,11 @@ googleAnalytics = ""
     enable = true
 
   [[params.social]]
-    title = "Blog"
-    icon = "fa-comment"
-    link = "http://freelance.postach.io"
+    title = "Registry Information"
+    icon = "fa-heart"
+    link = ""
 
   [[params.social]]
-    title = "Email Me!"
+    title = "Email Us!"
     icon = "fa-envelope"
     link = "mailto:matt.fisher@fishworks.io"
