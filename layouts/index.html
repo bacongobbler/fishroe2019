@@ -5,35 +5,48 @@
   </head>
 
   <body>
-
-    <!-- Title -->
-    <div class="container">
-      {{ if .Site.Params.header.enable }}
-        {{ partial "header.html" . }}
-      {{ end }}
+    <!-- Logo -->
+    <div class="container-fluid logo">
+      <img src="{{ .Site.Params.logo.image }}">
     </div>
 
-    <!-- Logo -->
-    <div class="logo">
-      <img src="{{ .Site.Params.logo.image }}" width="{{ .Site.Params.logo.width }}" alt="{{ .Site.Params.logo.alt }}">
+    <!-- Title -->
+    <div class="container title">
+      {{ partial "header.html" . }}
+    </div>
+
+    <div class="container rsvp">
+        <a class="btn btn-outline-secondary btn-lg" href="#" role="button">RSVP</a>
+    </div>
+
+    <div class="container">
+      <h2>When</h2>
+      <p>Saturday, August 17th, 2019 at 2:00PM PDT</p>
+      <p id="countdown"></p>
+    </div>
+
+    <div class="container">
+      <h2>Where</h2>
+      <p><a href="http://birdseyecovefarm.com/">Bird's Eye Cove Farm</a></p>
+      <p><a href="https://goo.gl/maps/wh98phFp7sn">5881 Genoa Bay Rd, Duncan, BC V9L 5Y6</a></p>
+    </div>
+
+    <div class="container">
+      <h2>Hotel Information</h2>
+      <p>We have booked 30 rooms for guests to reserve for the wedding: 20 with two Queen beds and 10 with King beds.</p>
+      <p>The group rate is reserved under Brandy's name. Please let reception know that you are booking it for Brandy & Matt's wedding.</p>
+      <p><a href="http://www.bestwesternvancouverisland.com/hotel-in-duncan-bc">Best Western Cowichan Valley Inn</a></p>
+      <p><a href="https://goo.gl/maps/bo3MWMny8zN2">6457 Norcross Rd, Duncan, BC V9L 6C6</a></p>
+      <p><a href="tel:1-250-748-2722">+1 (250) 748-2722</a></p>
     </div>
 
     <!-- Quote -->
     <div class="container">
-      <div class="row w centered">
-        <br>
-        <div class="col-lg-6 col-lg-offset-3">
-          <p>We are so happy that you’ll be able to join us for our wedding. As many of you know, we’ve lived together for several years, and our house is already filled with all the things we could ever need to make it a home. While the presence of your company is the only gift we could ever ask for, an alternative registry has been set up here for those who have expressed an interest in offering a gift to mark the occasion.</p>
-        </div>
-      </div>
+      <h2>Registry</h2>
+      <p><a href="#">Click here to see our Registry</a></p>
+      <p>We are so happy that you’ll be able to join us for our wedding. As many of you know, we’ve lived together for several years, and our house is already filled with all the things we could ever need to make it a home.</p>
+      <p>While the presence of your company is the only gift we could ever ask for, a registry has been set up here for those who have expressed an interest in offering a gift to mark the occasion.</p>
     </div>
-
-    <div class="container">
-      <!-- Social -->
-      {{ if .Site.Params.social_icons.enable }}
-        {{ partial "social.html" . }}
-      {{ end }}
-    </div><!-- /.container -->
 
     {{ partial "scripts.html" . }}
   </body>

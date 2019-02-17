@@ -2,7 +2,7 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "Matthew and Brandy 2019"
-theme = "hugo-smpl-theme"
+# theme = ""
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
 # Enter your tracking code to enable Google analytics
@@ -19,22 +19,16 @@ googleAnalytics = ""
   name = "Your Name"
   description = "Your Description"
 
-  [params.profile]
-    enable = true
-    image = "/assets/img/olive.jpg"
-    width = "100%"
-    alt = "Olive"
-  
+  countdown = "August 17, 2019 14:30:00"
+
   [params.logo]
-    enable = true
-    image = "/assets/img/becf.jpg"
-    width = "100%"
-    alt = "Bird's Eye Cove Farm"
+    image = "/assets/img/cobie.jpg"
+    alt = "Engagement Photo"
+    width = "80%"
 
   # Header section
   [params.header]
-    enable = true
-    title = "Matt & Brandy<br>Are Getting Married<br>@<br>Bird's Eye Cove Farm<br>August 17th, 2019"
+    title = "Matt & Brandy"
 
   # Social icons section
   # Add a modifier class to increase size
