@@ -1,9 +1,7 @@
 # Site settings
-baseurl = "https://example.org/"
+baseurl = "https://fishroe2019.ca/"
 languageCode = "en-us"
 title = "Matt and Brandy 2019"
-# theme = ""
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
 # Enter your tracking code to enable Google analytics
 googleAnalytics = ""
@@ -14,12 +12,9 @@ googleAnalytics = ""
   # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
   # for more icons.
 
-  # To provide more meta data for search engines feel free to add a few information.
-  # This lines will be inserted as meta tags.
-  name = "Your Name"
-  description = "Your Description"
-
+  # Countdown timer for a certain date. In this case, for our wedding ceremony!
   countdown = "August 17, 2019 14:30:00"
+  # Human-readable format of the same date above
   countdownHuman = "Saturday, August 17th, 2019 at 2:30PM PDT"
 
   [params.logo]
@@ -30,20 +25,3 @@ googleAnalytics = ""
   # Header section
   [params.header]
     title = "Matt & Brandy"
-
-  # Social icons section
-  # Add a modifier class to increase size
-  # fa-lg, fa-2x, fa-3x, fa-4x, fa-5x
-  # e.g., icon = "fa-instagram fa-lg"
-  [params.social_icons]
-    enable = true
-
-  [[params.social]]
-    title = "Registry Information"
-    icon = "fa-heart"
-    link = ""
-
-  [[params.social]]
-    title = "Email Us!"
-    icon = "fa-envelope"
-    link = "mailto:matt.fisher@fishworks.io"
