@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "https://fishroe2019.ca/"
 languageCode = "en-us"
-title = "Matt and Brandy 2019"
+title = "Brandy & Matt"
 
 # Enter your tracking code to enable Google analytics
 googleAnalytics = ""
@@ -24,4 +24,4 @@ googleAnalytics = ""
 
   # Header section
   [params.header]
-    title = "Matt & Brandy"
+    title = "Brandy and Matt are getting married!"
