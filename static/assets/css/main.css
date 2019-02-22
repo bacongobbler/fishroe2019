@@ -40,3 +40,7 @@ a:hover {
 .shaded {
     background-color: #e9e8e6; /* white lilac */
 }
+
+.registry img {
+    width: 20%;
+}
