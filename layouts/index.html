@@ -5,14 +5,14 @@
   </head>
 
   <body>
-    <!-- Logo -->
-    <div class="container-fluid logo">
-      <img src="{{ .Site.Params.logo.image }}" />
-    </div>
-
     <!-- Title -->
     <div class="container title">
-      {{ partial "header.html" . }}
+        {{ partial "header.html" . }}
+    </div>
+
+    <!-- Logo -->
+    <div class="container-fluid logo">
+      <img class="img-fluid" src="{{ .Site.Params.logo.image }}" />
     </div>
 
     <div class="container rsvp">
@@ -48,8 +48,8 @@
       <p>As many of you know, we’ve lived together for several years, and our house is already filled with all the things we could ever need to make it a home.</p>
       <p>While the presence of your company is the only gift we could ever ask for, a registry has been set up here for those who have expressed an interest in offering a gift to mark the occasion.</p>
       <p>Please click the logos below to see the registries.</p>
-      <a href="http://www.heathceramics.com/apps/giftregistry/registry/69201?shared_url=true"><img src="assets/img/heath-logo.png" alt="Heath Ceramics Registry" /></a>
-      <a href="https://sokindregistry.org/registry/fishroe2019"><img src="assets/img/sokind-logo.jpg" /></a>
+      <a href="http://www.heathceramics.com/apps/giftregistry/registry/69201?shared_url=true"><img class="img-thumbnail" src="assets/img/heath-logo.png" alt="Heath Ceramics Registry" /></a>
+      <a href="https://sokindregistry.org/registry/fishroe2019"><img class="img-thumbnail" src="assets/img/sokind-logo.jpg" /></a>
     </div>
 
     {{ partial "scripts.html" . }}

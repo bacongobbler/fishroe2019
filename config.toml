@@ -18,9 +18,8 @@ googleAnalytics = ""
   countdownHuman = "Saturday, August 17th, 2019 at 2:30PM PDT"
 
   [params.logo]
-    image = "assets/img/cobie.jpg"
+    image = "assets/img/bm.jpg"
     alt = "Engagement Photo"
-    width = "80%"
 
   # Header section
   [params.header]

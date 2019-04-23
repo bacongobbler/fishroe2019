@@ -1,5 +1,6 @@
 html, body {
     color: #65676F; /* dark bluish grey */
+    background-color: rgba(135, 155, 175, 0.3);
     text-align: center;
     font-family: Oswald;
 }
@@ -16,7 +17,7 @@ a {
 }
 
 a:visited {
-    color: #b0c9d2; /* pastel blue */
+    color: #5f7d99; /* slate grey */
 }
 
 a:hover {
@@ -25,8 +26,8 @@ a:hover {
 }
 
 .logo img {
-    height: 275px;
-    width: 77%;
+    max-height: 500px;
+    padding-bottom: 20px;
 }
 
 .title {
@@ -42,5 +43,5 @@ a:hover {
 }
 
 .registry img {
-    width: 20%;
+    max-height: 100px;
 }
